@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'EBGaramond';
+}
+@font-face {
+    font-family: 'EBGaramond';
+    src: url('./fonts/EBGaramond08-Regular.otf');
+}
+main{
+    background-color: #F2F2EF;
+}
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #212517;
+}
+.buttons{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.buttons a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.5vw;
+}
+.buttons a:hover{
+    color:#DED3A6;
+}
+.firstPage{
+    display: flex;
+    height: 90vh;
+    width: 100%;
+}
+.firstImg{
+    width: 50%;
+    height: 100%;
+}
+.firstImg img{
+    width: 100%;
+    height: 90vh;
+}
+.firstTxt{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.firstTxt p{
+    font-size: 4vw;
+    width: 70%;
+}
+.katalog{
+    width: 100%;
+    background-color: #759242;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.whiteZagl{
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 300%;
+    text-align: center;
+    color: white;
+}
+.blackZagl{
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 300%;
+    text-align: center;
+    color: black;
+}
+.white{
+    width: 10%;
+    height: 5px;
+    background-color: #F2F2EF;
+    border-radius: 20px;
+}
+.black{
+    width: 10%;
+    height: 5px;
+    background-color: black;
+    border-radius: 20px;
+}
+.mainKatalog{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flow{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #374709;
+    padding: 3%;
+    border-radius: 20px;
+}
+.flow p{
+    color: white;
+    font-size: 200%;
+}
+.flow a{
+    margin-top: 10%;
+    background-color: #DED3A6;
+    color: black;
+    text-decoration: none;
+    font-size: 200%;
+    padding: 3% 6%;  
+    border-radius: 20px;
+}
+.flow img{ 
+    width: 95%;
+    border-radius: 20px;
+}
+.flow a:hover{
+    color: white;
+    background-color: #759242;
+}
+.carousel{
+    padding: 30px;
+}
+.active{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inBlock{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.inInBlock{
+    width: 25%;
+    margin:20px;
+}
+.some{
+    background-color: #DED3A6;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 200%;
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+}
+.about{
+    background: url('./img/2.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutMain{
+    color: white;
+    width: 70%;
+    font-size: 2vw;
+    text-align: center;
+    padding: 10px;
+}
+.zakaz{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.zak{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    height: 80vh;
+}
+.zak label{
+    font-size: 3vw;
+}
+.zak input{
+    width: 70%;
+    height: 6%;
+    font-size: 2vw;
+}
+.zak textarea{
+    width: 70%;
+    font-size: 2vw;
+}
+.zak button{
+    margin: 20px 0;
+    padding: 20px;
+    border: 0;
+    font-size: 200%;
+    background-color: #374709;
+    border-radius: 20px;
+    color: white;
+}
+.zak button:hover{
+    color: black;
+    background-color: #759242;
+}
+.footer{
+    background-color: #374709;
+    height: 100%;
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .buttons a{
+        font-size: 3.5vw;
+    }
+    .firstImg{
+        width: 70%;
+    }
+    .firstTxt{
+        width: 30%;
+    }
+    .aboutMain{
+        width: 95%;
+        font-size: 4vw;
+    }
+    .zak label{
+        font-size: 4vw;
+    }
+    .zak input{
+        font-size: 4vw;
+    }
+    .zak textarea{
+        font-size: 4vw;
+    }
+    .carousel{
+        width: 100%;
+    }
+    .inInBlock{
+        width: 100%;
+        margin: 1px;
+    }
+}
+@media screen and (max-width: 599px) {
+    .buttons a{
+        font-size: 5vw;
+
+    }
+    .buttons{
+        width: 70%;
+    }
+    .firstPage{
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstImg{
+        width: 100%;
+        height: 50%;
+    }
+    .firstTxt{
+        width: 70%;
+        background-color: #759242;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .firstTxt p{
+        color: white;
+        font-size: 7vw;
+        text-align: center;
+    }
+    .some{
+        font-size: 150%;
+    }
+    .inInBlock{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .inBlock{
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutMain{
+        width: 100%;
+        font-size: 6vw;
+    }
+    .zak label{
+        font-size: 6vw;
+    }
+    .zak input{
+        font-size: 6vw;
+    }
+    .zak textarea{
+        font-size: 6vw;
+    }
+    .whiteZagl{
+        font-size: 12vw;
+    }
+    .blackZagl{
+        font-size: 12vw;
+    }
+    .flow p{
+        font-size: 10vw;
+    }
+    .flow a{
+        font-size: 10vw;
+    }
+}
